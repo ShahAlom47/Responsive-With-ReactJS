@@ -1,7 +1,9 @@
 
+import { LineChart } from 'recharts'
 import './App.css'
 import Navbar from './Components/Navbar'
 import PriceOption from './Components/PriceOption'
+import LineCharts from './Components/LineChart'
 
 function App() {
 
@@ -10,6 +12,7 @@ function App() {
     <>
     <Navbar></Navbar>
     <PriceOption></PriceOption>
+    <LineCharts></LineCharts>
  
     </>
   )

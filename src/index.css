@@ -14,5 +14,6 @@ body{
 }
 .navbar li:hover{
 background-color: ghostwhite;
+color: #ff0000;
 
 }

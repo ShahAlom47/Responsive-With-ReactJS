@@ -14,13 +14,15 @@ const Navbar = () => {
         }
         window.addEventListener('resize', windowsHandel);
     }, [])
+   
     return (
-        <nav className="navbar flex  lg:justify-center bg-slate-200 z-10">
+        <nav className="navbar flex  lg:justify-center bg-slate-200 ">
             <div onClick={() => setOpen(!isOpen)} className="lg:hidden">
                 {isOpen ? (<RiMenu2Fill />) : (<ImCross />)}
             </div>
 
-            <ul tabIndex={0} className={`z-50 flex  flex-col lg:flex-row absolute lg:static duration-300 bg-slate-200 rounded-lg  ${isOpen && '-left-80'}  top-14 left-1 px-7  font-semibold  `}>
+            <ul  className={`flex  flex-col lg:flex-row absolute lg:static duration-300 bg-slate-200 rounded-lg top-14 -left-1 px-4 ${isOpen&&'-left-40'}  font-semibold `}>
+
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Service</a></li>
